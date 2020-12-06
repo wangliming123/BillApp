@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">记账APP</string>
+    <string name="str_gather">汇总</string>
+    <string name="str_create_bill">新建账单</string>
+    <string name="str_add">新增</string>
+    <string name="str_finish">完成</string>
+    <string name="str_price_hint">请输入金额</string>
+    <string name="str_select">查询</string>
+    <string formatted="true" name="str_gather_format">总金额：%s元</string>
+</resources>

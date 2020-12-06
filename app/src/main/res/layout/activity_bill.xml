@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.BillActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bill_tool"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:titleTextColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:id="@+id/tab_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@drawable/shape_radius"
+        android:layout_margin="@dimen/dp5"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="@dimen/sp16"
+            android:paddingStart="@dimen/dp10"
+            android:paddingEnd="@dimen/dp10"
+            android:textColor="@color/textColorPrimary"/>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/btn_date"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:background="@drawable/shape_radius"
+        android:layout_margin="@dimen/dp5"
+        android:inputType="numberDecimal"
+        android:hint="@string/str_price_hint"
+        android:textSize="@dimen/sp16"
+        android:paddingStart="@dimen/dp10"
+        android:paddingEnd="@dimen/dp10"
+        android:textColor="@color/textColorPrimary"
+        android:autofillHints="" />
+
+
+    <EditText
+        android:id="@+id/et_bill_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp150"
+        android:gravity="start|top"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp5"
+        android:paddingStart="@dimen/dp10"
+        android:paddingEnd="@dimen/dp10"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/textColorPrimary"
+        android:background="@drawable/shape_radius"
+        android:layout_margin="@dimen/dp5"
+        android:lineSpacingExtra="@dimen/dp5"
+        android:maxLines="10"
+        android:singleLine="false"
+        android:scrollHorizontally="false"
+        android:scrollbars="none"
+        android:minLines="5"
+        android:inputType="textMultiLine"
+        android:autofillHints="" />
+
+</LinearLayout>

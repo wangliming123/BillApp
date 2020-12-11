@@ -28,11 +28,11 @@ class MainActivity : BaseVMActivity<MainViewModel>() {
             startKtxActivity<BillActivity>()
         }
         rv_bill.adapter = adapter
-        val permissions = arrayOf(
-            Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE
-        )
-        EasyPermissions.requestPermissions(this, "应用需要访问以下权限，请允许", 0, *permissions)
+//        val permissions = arrayOf(
+//            Manifest.permission.READ_EXTERNAL_STORAGE,
+//            Manifest.permission.WRITE_EXTERNAL_STORAGE
+//        )
+//        EasyPermissions.requestPermissions(this, "应用需要访问以下权限，请允许", 0, *permissions)
     }
 
 

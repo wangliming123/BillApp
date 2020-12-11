@@ -69,7 +69,7 @@ class BillViewHolder(parent: ViewGroup, deleteVisibility: Boolean) : RecyclerVie
     fun bind(bill: Bill?) {
         bill?.run {
             tvPrice.text = String.format("%.2f", price)
-            tvTime.text = time.format(Constant.TIME_FORMAT_STR)
+            tvTime.text = time.format()
             tvDesc.text = desc
             tvDelete.setOnClickListener {
                 Constant.billDao.delete(this)

@@ -14,7 +14,7 @@ fun Date.format(format: String = "yyyy-MM-dd HH:mm"): String =
     SimpleDateFormat(format, Locale.CHINA).format(this)
 
 
-fun Long.format(format: String = "yyyy-MM-dd hh:mm"): String =
+fun Long.format(format: String = "yyyy-MM-dd HH:mm"): String =
     SimpleDateFormat(format, Locale.CHINA).format(Date(this))
 
 inline fun <reified T : Activity> Activity.startKtxActivity(
